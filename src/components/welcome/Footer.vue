@@ -6,12 +6,12 @@
         <p
           class="text-xl w-full mb-8"
         >Wujudkan impianmu menjadi programmer handal dan berkarir profesional di dunia IT.</p>
-       <form class="flex items-center max-w-lg mt-10">
+       <form class="flex items-center w-full max-w-xl mt-10">
            <input type="text" placeholder="youremail@email.com"  class="py-3 px-4 shadow-lg rounded-tl rounded-bl w-full focus:outline-none ring-2 ring-green-secondary ring-opacity-0 focus:ring-opacity-40" required/>
-        <button type="submit" class="py-3 px-4 inline-flex items-center space-x-2 uppercase font-medium bg-green-secondary ring-2 ring-green-secondary ring-opacity-0 focus:ring-opacity-40  hover:bg-green-light focus:outline-none text-gray-50 transition rounded-tr rounded-br shadow-lg">
-          <span>Feedback</span>
-          <i class="fa fa-fw fa-arrow-right"></i>
-        </button>
+          <button type="submit" class="py-3 px-4 inline-flex items-center space-x-2 uppercase font-medium bg-green-secondary ring-2 ring-green-secondary ring-opacity-0 focus:ring-opacity-40  hover:bg-green-light focus:outline-none text-gray-50 transition rounded-tr rounded-br shadow-lg">
+            <span>Feedback</span>
+            <i class="fa fa-fw fa-arrow-right"></i>
+          </button>
        </form>
       </div>
     </section>
@@ -72,7 +72,7 @@
         </span>
       </div>
     </section>
-    <section class="flex pb-24 lg:pb-8 lg:pt-8 items-center justify-center h-10 border-t-2 border-gray-200">
+    <section class="flex pb-24 lg:pb-8 pt-8 items-center justify-center h-10 border-t-2 border-gray-200">
       <p
         class="text-sm"
       >&copy; {{(new Date()).getFullYear()}} ExoApp MTodo Corporations - All Rights Reserved</p>

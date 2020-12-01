@@ -1,11 +1,84 @@
 <template>
     <div class="max-w-7xl mx-auto p-2">
-BLOG PAGE
+       <div class="flex flex-col items-center justify-center">
+            <div class="w-full px-2 flex items-center justify-center">
+               <input type="text" placeholder="Search (Press “/” to focus)"  class="py-3 px-4 shadow-lg rounded w-full max-w-lg mt-6 focus:outline-none ring-2 ring-green-secondary ring-opacity-0 focus:ring-opacity-40"/>
+            </div>
+         <h1 class="text-6xl mt-2 lg:mt-8 font-semibold text-gray-900">Blogs and Resources</h1>
+         <p class="lg:text-center mt-4 text-xl">Every team has a unique process for shipping software.<br class="hidden lg:block"/> Use an out-of-the-box workflow, or create one to match the way your team works.</p>
+            <button class="py-2 mt-10 inline-flex items-center space-x-2 px-5 uppercase font-medium bg-green-secondary  hover:bg-green-light focus:outline-none shadow-lg text-gray-50 transition rounded">
+               <span> Write your blog</span> 
+               <svg class="w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+               </svg>
+            </button>
+       </div>
+      <div class="h-full flex flex-wrap mt-10 pb-14 lg:pb-0">
+            <BlogCard v-for="blog in blogs" :key="blog.id" :blog="blog"/>
+      </div>
    </div>
 </template>
 
 <script>
+import { reactive, toRefs } from 'vue'
+import BlogCard from '../components/cards/BlogCard.vue'
    export default {
-      
+      components: { BlogCard },
+      setup(){
+      const state = reactive({
+         blogs:[
+            {
+               blogId: 1,
+               blogTitle: "Fantasy Tour Story",
+               publishedAt: "25 November 2020",
+               updatedAdt: new Date(),
+               writer: "Eko Sutrisno",
+               readTime: 3,
+               highlight: "The fighting spirit in a person can be formed by giving motivational pearls of wisdom to that person. These words can be in the form of appeals or sentences that can encourage someone. At least, something related to pearls is something that is beautiful and can decorate the wearer. Just look at a girl wearing a pearl necklace, of course they will look more beautiful than other girls. Likewise with pearls of wisdom, these words are also a collection of beautiful words which are then woven in sentence frames that can melt the heart. So, it can change a decision from what initially seems negative to something positive....",
+               edited: true,
+               imageUrl: "https://i.pinimg.com/236x/a8/d4/38/a8d438ba91798b60eec9603e6ceadba2.jpg"
+            },
+            {
+               blogId: 2,
+               blogTitle: "Always Be Your Self",
+               publishedAt: "11 November 2020",
+               updatedAdt: new Date(),
+               writer: "Puspita Sari",
+               readTime: 6,
+               highlight: "The fighting spirit in a person can be formed by giving motivational pearls of wisdom to that person. These words can be in the form of appeals or sentences that can encourage someone. At least, something related to pearls is something that is beautiful and can decorate the wearer. Just look at a girl wearing a pearl necklace, of course they will look more beautiful than other girls. Likewise with pearls of wisdom, these words are also a collection of beautiful words which are then woven in sentence frames that can melt the heart. So, it can change a decision from what initially seems negative to something positive....",
+               edited: false,
+               imageUrl: "https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzJ8fHRlY2hub2xvZ3l8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60"
+            },
+            {
+               blogId: 3,
+               blogTitle: "Manage Your Work Better",
+               publishedAt: "01 December 2020",
+               updatedAdt: new Date(),
+               writer: "Siti Nur Amanah",
+               readTime: 14,
+               highlight: "The fighting spirit in a person can be formed by giving motivational pearls of wisdom to that person. These words can be in the form of appeals or sentences that can encourage someone. At least, something related to pearls is something that is beautiful and can decorate the wearer. Just look at a girl wearing a pearl necklace, of course they will look more beautiful than other girls. Likewise with pearls of wisdom, these words are also a collection of beautiful words which are then woven in sentence frames that can melt the heart. So, it can change a decision from what initially seems negative to something positive....",
+               edited: true,
+               imageUrl: "https://images.unsplash.com/photo-1544256718-3bcf237f3974?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzR8fHRlY2hub2xvZ3l8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60"
+            },
+            {
+               blogId: 4,
+               blogTitle: "Impostur The Best",
+               publishedAt: "12 November 2020",
+               updatedAdt: new Date(),
+               writer: "Deni Kurniawan",
+               readTime: 11,
+               highlight: "The fighting spirit in a person can be formed by giving motivational pearls of wisdom to that person. These words can be in the form of appeals or sentences that can encourage someone. At least, something related to pearls is something that is beautiful and can decorate the wearer. Just look at a girl wearing a pearl necklace, of course they will look more beautiful than other girls. Likewise with pearls of wisdom, these words are also a collection of beautiful words which are then woven in sentence frames that can melt the heart. So, it can change a decision from what initially seems negative to something positive....",
+               edited: false,
+               imageUrl: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDl8fHRlY2hub2xvZ3l8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60"
+            },
+         ]
+      })
+
+         return{
+            ...toRefs(state)
+         }
+      }
+
+
    }
 </script>
