@@ -6,7 +6,7 @@
         <p
           class="text-xl w-full mb-8"
         >Wujudkan impianmu menjadi programmer handal dan berkarir profesional di dunia IT.</p>
-       <form class="flex items-center w-full max-w-xl mt-10">
+       <form class="flex items-center w-full max-w-xl mx-auto mt-10">
            <input type="text" placeholder="youremail@email.com"  class="py-3 px-4 shadow-lg rounded-tl rounded-bl w-full focus:outline-none ring-2 ring-green-secondary ring-opacity-0 focus:ring-opacity-40" required/>
           <button type="submit" class="py-3 px-4 inline-flex items-center space-x-2 uppercase font-medium bg-green-secondary ring-2 ring-green-secondary ring-opacity-0 focus:ring-opacity-40  hover:bg-green-light focus:outline-none text-gray-50 transition rounded-tr rounded-br shadow-lg">
             <span>Feedback</span>

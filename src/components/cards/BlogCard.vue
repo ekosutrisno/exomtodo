@@ -1,12 +1,12 @@
 <template>
-  <div class="w-full h-full lg:h-72 my-4 transition-shadow duration-300 flex flex-col lg:flex-row bg-gray-50 ring-1 ring-gray-300 ring-opacity-60 hover:ring-opacity-80 rounded-xl hover:shadow-lg">
+  <div class="w-full h-full cursor-pointer lg:h-72 my-4 transition-shadow duration-300 flex flex-col lg:flex-row bg-gray-50 ring-1 ring-gray-300 ring-opacity-60 hover:ring-opacity-80 rounded-xl hover:shadow-lg">
     <div class="h-72 w-full lg:w-96 rounded-t-xl lg:rounded-l-xl lg:rounded-t-none overflow-hidden">
       <img class="w-full h-full object-cover" :src="blog.imageUrl" />
     </div>
     <div class="h-full w-full rounded-l-xl overflow-hidden py-5 px-8">
       <div class="flex items-start justify-between">
         <div class="inline-block">
-          <span class="font-semibold text-2xl block text-gray-700">{{ blog.blogTitle }} <i v-if="blog.edited" class="text-gray-400" style="font-size:0.6rem">edited</i> </span>
+          <span class="font-semibold text-2xl block text-gray-700">{{ blog.blogTitle }} <i v-if="blog.edited" class="text-gray-400" style="font-size:0.7rem">edited</i> </span>
           <span class="text-xs text-gray-700 inline-flex space-x-1 items-center mt-2">
             <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
@@ -32,6 +32,9 @@
             <svg class="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
               <path d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z" />
             </svg>
+          </button>
+          <button class="focus:outline-none rounded-full ring-2 ring-green-secondary ring-opacity-0 hover:ring-opacity-90">
+            <img class="rounded-full w-8 h-8" :src="blog.imageUrl" :alt="`img-${blog.id}`">
           </button>
         </div>
       </div>

@@ -18,6 +18,8 @@ module.exports = {
        }
      },
    },
-   variants: {},
+   variants: {
+     ringOpacity:['hover','focus','group-hover']
+   },
    plugins: [],
  }
