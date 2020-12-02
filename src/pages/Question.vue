@@ -2,7 +2,7 @@
     <div class="max-w-7xl mx-auto p-2">
       <div class="flex flex-col items-center justify-center">
             <div class="w-full px-2 flex items-center justify-center">
-               <input type="text" placeholder="Search a question (Press “/” to focus)"  class="py-3 px-4 shadow-lg rounded w-full max-w-lg mt-6 focus:outline-none ring-2 ring-green-secondary ring-opacity-0 focus:ring-opacity-40"/>
+               <input @keyup.enter="searchQuestion" v-model="inputSearch" type="text" placeholder="Search a question (Press “/” to focus)"  class="py-3 px-4 shadow-lg rounded w-full max-w-lg mt-6 focus:outline-none ring-2 ring-green-secondary ring-opacity-0 focus:ring-opacity-40"/>
             </div>
          <h1 class="text-6xl mt-2 lg:mt-8 font-semibold text-gray-900">Question and Answer</h1>
          <p class="lg:text-center mt-4 text-xl">Every team has a unique process for shipping software.<br class="hidden lg:block"/> Use an out-of-the-box workflow, or create one to match the way your team works.</p>
@@ -24,11 +24,43 @@
              </button>
           </div>
        </div>
+
+      <div class="w-full max-w-7xl mx-auto pb-16 lg:pb-0">
+         <QuestionCard v-for="question in questions" :key="question.id" :question="question"/>
+      </div>
    </div>
 </template>
 
 <script>
+import { reactive, ref, toRefs } from 'vue'
+import QuestionCard from '../components/cards/QuestionCard.vue'
+import questions from '../assets/data/Question';
    export default {
+  components: { QuestionCard },
       
+      setup(){
+         const state = reactive({
+            questions: questions
+         })
+
+         const inputSearch = ref('')
+
+         const searchQuestion = ()=>{
+            if(!inputSearch == ''){
+               const fileteredQuestion = questions.filter(q => q.author === inputSearch.value)
+               state.questions = fileteredQuestion;
+               inputSearch.value = ''
+            }else{
+               return
+            }
+         }
+           
+         return {
+            ...toRefs(state),
+            searchQuestion,
+            inputSearch
+         }
+
+      }
    }
 </script>
