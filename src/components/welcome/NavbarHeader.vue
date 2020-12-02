@@ -7,7 +7,7 @@
          </router-link>
       <div class="lg:flex items-center space-x-5 hidden">
          <router-link to="/" class="py-2 px-3 focus:outline-none uppercase text-lg font-semibold text-gray-700 hover:text-green-secondary transition-colors">Home</router-link>
-         <router-link to="/example" class="py-2 px-3 focus:outline-none uppercase text-lg font-semibold text-gray-700 hover:text-green-secondary transition-colors">Example</router-link>
+         <router-link to="/about-me" class="py-2 px-3 focus:outline-none uppercase text-lg font-semibold text-gray-700 hover:text-green-secondary transition-colors">About Me</router-link>
          <router-link to="/question" class="py-2 px-3 focus:outline-none uppercase text-lg font-semibold text-gray-700 hover:text-green-secondary transition-colors">Q&A</router-link>
          <router-link to="/blog" class="py-2 px-3 focus:outline-none uppercase text-lg font-semibold text-gray-700 hover:text-green-secondary transition-colors">Blog</router-link>
       </div>

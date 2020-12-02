@@ -4,7 +4,7 @@
             <div class="w-full px-2 flex items-center justify-center">
                <input type="text" placeholder="Search topic (Press “/” to focus)"  class="py-3 px-4 shadow-lg rounded w-full max-w-lg mt-6 focus:outline-none ring-2 ring-green-secondary ring-opacity-0 focus:ring-opacity-40"/>
             </div>
-         <h1 class="text-6xl mt-2 lg:mt-8 font-semibold text-gray-900">Blogs and Resources</h1>
+         <h1 class="text-6xl mt-2 lg:mt-8 font-semibold text-gray-900">Blog and Resources</h1>
          <p class="lg:text-center mt-4 text-xl">Every team has a unique process for shipping software.<br class="hidden lg:block"/> Use an out-of-the-box workflow, or create one to match the way your team works.</p>
             <button class="py-2 mt-10 inline-flex items-center space-x-2 px-5 uppercase font-medium bg-green-secondary  hover:bg-green-light focus:outline-none shadow-lg text-gray-50 transition rounded">
                <span> Write your blog</span> 

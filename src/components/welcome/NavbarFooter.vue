@@ -43,7 +43,7 @@
 
       <div class="flex flex-col md:flex-row items-center justify-between">
         <router-link
-          to="/example"
+          to="/about-me"
           class="hover:text-green-light hover:no-underline transition-colors duration-300 ease-linear"
         >
           <div class="flex flex-col md:flex-row items-center">
@@ -75,7 +75,7 @@
               </svg>
             </div>
             <div class="flex md:pl-3 text-xs md:text-base font-semibold">
-              Example
+              About Me
             </div>
           </div>
 
