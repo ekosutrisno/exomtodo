@@ -4,3 +4,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities{
+   .router-link-active{
+      @apply text-green-secondary;
+   }
+}

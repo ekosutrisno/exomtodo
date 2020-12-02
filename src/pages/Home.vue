@@ -5,8 +5,8 @@
     </div>
 </template>
 <script>
-import Feature from '../components/welcome/Feature.vue';
-import Hero from '../components/welcome/Hero.vue';
+import Feature from '../components/web/Feature.vue';
+import Hero from '../components/web/Hero.vue';
 
 export default {
   name: 'App',

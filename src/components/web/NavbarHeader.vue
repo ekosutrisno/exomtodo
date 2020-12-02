@@ -13,10 +13,10 @@
       </div>
       <div class="hidden lg:flex">
          <div class="flex items-center space-x-5">
-            <router-link to="/" class="py-2 px-3 uppercase focus:outline-none font-medium hover:text-green-secondary transition-colors">
+            <router-link to="/login" class="py-2 px-3 uppercase focus:outline-none font-medium hover:text-green-secondary transition-colors">
                Login
             </router-link>
-            <router-link to="/" class="py-2 px-5 uppercase font-medium bg-green-secondary  hover:bg-green-light focus:outline-none shadow-lg text-gray-50 transition rounded">
+            <router-link to="/register" class="py-2 px-5 uppercase font-medium bg-green-secondary  hover:bg-green-light focus:outline-none shadow-lg text-gray-50 transition rounded">
                Register
             </router-link>
          </div>
