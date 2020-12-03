@@ -32,57 +32,13 @@
 
 <script>
 import { reactive, toRefs } from 'vue'
+import blogs from '../assets/data/Blog';
 import BlogCard from '../components/cards/BlogCard.vue'
    export default {
       components: { BlogCard },
       setup(){
       const state = reactive({
-         blogs:[
-            {
-               blogId: 1,
-               blogTitle: "Fantasy Tour Story",
-               publishedAt: "25 November 2020",
-               updatedAdt: new Date(),
-               writer: "Eko Sutrisno",
-               readTime: 3,
-               highlight: "The fighting spirit in a person can be formed by giving motivational pearls of wisdom to that person. These words can be in the form of appeals or sentences that can encourage someone. At least, something related to pearls is something that is beautiful and can decorate the wearer. Just look at a girl wearing a pearl necklace, of course they will look more beautiful than other girls. Likewise with pearls of wisdom, these words are also a collection of beautiful words which are then woven in sentence frames that can melt the heart. So, it can change a decision from what initially seems negative to something positive....",
-               edited: true,
-               imageUrl: "https://i.pinimg.com/236x/a8/d4/38/a8d438ba91798b60eec9603e6ceadba2.jpg"
-            },
-            {
-               blogId: 2,
-               blogTitle: "Always Be Your Self",
-               publishedAt: "11 November 2020",
-               updatedAdt: new Date(),
-               writer: "Puspita Sari",
-               readTime: 6,
-               highlight: "The fighting spirit in a person can be formed by giving motivational pearls of wisdom to that person. These words can be in the form of appeals or sentences that can encourage someone. At least, something related to pearls is something that is beautiful and can decorate the wearer. Just look at a girl wearing a pearl necklace, of course they will look more beautiful than other girls. Likewise with pearls of wisdom, these words are also a collection of beautiful words which are then woven in sentence frames that can melt the heart. So, it can change a decision from what initially seems negative to something positive....",
-               edited: false,
-               imageUrl: "https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzJ8fHRlY2hub2xvZ3l8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60"
-            },
-            {
-               blogId: 3,
-               blogTitle: "Manage Your Work Better",
-               publishedAt: "01 December 2020",
-               updatedAdt: new Date(),
-               writer: "Siti Nur Amanah",
-               readTime: 14,
-               highlight: "The fighting spirit in a person can be formed by giving motivational pearls of wisdom to that person. These words can be in the form of appeals or sentences that can encourage someone. At least, something related to pearls is something that is beautiful and can decorate the wearer. Just look at a girl wearing a pearl necklace, of course they will look more beautiful than other girls. Likewise with pearls of wisdom, these words are also a collection of beautiful words which are then woven in sentence frames that can melt the heart. So, it can change a decision from what initially seems negative to something positive....",
-               edited: true,
-               imageUrl: "https://images.unsplash.com/photo-1544256718-3bcf237f3974?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzR8fHRlY2hub2xvZ3l8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60"
-            },
-            {
-               blogId: 4,
-               blogTitle: "Impostur The Best",
-               publishedAt: "12 November 2020",
-               updatedAdt: new Date(),
-               writer: "Deni Kurniawan",
-               readTime: 11,
-               highlight: "The fighting spirit in a person can be formed by giving motivational pearls of wisdom to that person. These words can be in the form of appeals or sentences that can encourage someone. At least, something related to pearls is something that is beautiful and can decorate the wearer. Just look at a girl wearing a pearl necklace, of course they will look more beautiful than other girls. Likewise with pearls of wisdom, these words are also a collection of beautiful words which are then woven in sentence frames that can melt the heart. So, it can change a decision from what initially seems negative to something positive....",
-               edited: false,
-               imageUrl: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDl8fHRlY2hub2xvZ3l8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60"
-            },
-         ]
+         blogs: blogs
       })
 
          return{
