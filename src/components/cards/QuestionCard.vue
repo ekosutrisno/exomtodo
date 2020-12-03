@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full flex justify-between h-full p-4 bg-gray-50 rounded m-2">
+    <div class="w-full flex justify-between h-full p-4 bg-gray-50 rounded my-2 md:mx-2">
       <!-- Aside -->
       <div class="w-20 flex-none h-full">
         <div class="inline-flex space-x-2 items-center">
@@ -21,7 +21,7 @@
       <!-- Header -->
       <div class="w-full h-full pl-1 py-1 pr-3 flex-1">
         <div class="flex items-center justify-between">
-          <div class="inline-flex space-x-2 items-center font-semibold text-gray-800">
+          <div class="flex flex-col md:flex-row items-start md:space-x-2 md:items-center font-semibold text-gray-800">
             <span class=""> {{question.author}} </span>
             <span class="text-gray-400 font-medium text-sm">{{question.createdAt}} sec ago</span>
             <span class="text-gray-400 px-2 hidden lg:block text-sm bg-gray-100 rounded-full font-medium shadow-sm">#{{question.category}}</span>

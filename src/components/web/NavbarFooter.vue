@@ -1,5 +1,5 @@
 <template>
-  <div class="nv-transition bg-gray-50 w-full bottom-0 left-0 right-0 fixed border-t bg-xsis-bg-light-primary border-gray-200 lg:hidden z-10">
+  <div class="nv-transition bg-gray-50 w-full bottom-0 left-0 fixed border-t border-gray-200 lg:hidden z-10">
     <div class="mx-auto lg:mx-4 py-3 px-2  md:mx-6 md:py-5 flex justify-between">
       <div class="flex flex-col md:flex-row items-center justify-around">
         <router-link
@@ -89,49 +89,7 @@
         >
           <div class="flex flex-col md:flex-row items-center">
             <div class="flex">
-              <svg
-                aria-hidden="true"
-                focusable="false"
-                data-prefix="fad"
-                data-icon="code"
-                role="img"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 640 512"
-                class="svg-inline--fa fa-code fa-w-20 inline-block h-5 fill-current mb-1"
-                data-v-205c0e3c=""
-              >
-                <g class="fa-group">
-                  <path
-                    fill="currentColor"
-                    d="M422.12 18.16a12 12 0 0 1 8.2 14.9l-136.5 470.2a12 12 0 0 1-14.89 8.2l-61-17.7a12 12 0 0 1-8.2-14.9l136.5-470.2a12 12 0 0 1 14.89-8.2z"
-                    opacity="0.4"
-                    class="fa-secondary"
-                  ></path>
-                  <path
-                    fill="currentColor"
-                    d="M636.23 247.26l-144.11-135.2a12.11 12.11 0 0 0-17 .5L431.62 159a12 12 0 0 0 .81 17.2L523 256l-90.59 79.7a11.92 11.92 0 0 0-.81 17.2l43.5 46.4a12 12 0 0 0 17 .6l144.11-135.1a11.94 11.94 0 0 0 .02-17.54zm-427.8-88.2l-43.5-46.4a12 12 0 0 0-17-.5l-144.11 135a11.94 11.94 0 0 0 0 17.5l144.11 135.1a11.92 11.92 0 0 0 17-.5l43.5-46.4a12 12 0 0 0-.81-17.2L117 256l90.6-79.7a11.92 11.92 0 0 0 .83-17.24z"
-                    class="fa-primary"
-                  ></path>
-                </g>
-              </svg>
-            </div>
-            <div class="flex md:pl-3 text-xs md:text-base font-semibold">
-
-              Q&A
-            </div>
-          </div>
-
-        </router-link>
-      </div>
-
-      <div class="flex flex-col md:flex-row items-center justify-between">
-        <router-link
-          to="/blog"
-          class="hover:text-green-light hover:no-underline transition-colors duration-300 ease-linear"
-        >
-          <div class="flex flex-col md:flex-row items-center">
-            <div class="flex">
-              <svg
+             <svg
                 aria-hidden="true"
                 focusable="false"
                 data-prefix="fad"
@@ -152,6 +110,46 @@
                   <path
                     fill="currentColor"
                     d="M576 224v160a64.06 64.06 0 0 1-64 64h-32v54.3a9.7 9.7 0 0 1-15.5 7.8L381.7 448H256a64.06 64.06 0 0 1-64-64v-64h160a96.15 96.15 0 0 0 96-96v-64h64a64.06 64.06 0 0 1 64 64z"
+                    class="fa-primary"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="flex md:pl-3 text-xs md:text-base font-semibold">
+              Q&A
+            </div>
+          </div>
+        </router-link>
+      </div>
+
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        <router-link
+          to="/blog"
+          class="hover:text-green-light hover:no-underline transition-colors duration-300 ease-linear"
+        >
+          <div class="flex flex-col md:flex-row items-center">
+            <div class="flex">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fad"
+                data-icon="swatchbook"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                class="svg-inline--fa fa-swatchbook fa-w-16 inline-block h-5 fill-current mb-1"
+                data-v-205c0e3c=""
+              >
+                <g class="fa-group">
+                  <path
+                    fill="currentColor"
+                    d="M64,256h64V192H64Zm370.66-88.29h0L344.5,77.36a31.83,31.83,0,0,0-45-.07h0l-.07.07L224,152.88V424L434.66,212.9A32,32,0,0,0,434.66,167.71ZM64,128h64V64H64ZM480,320H373.09L186.68,506.51c-2.06,2.07-4.5,3.58-6.68,5.49H480a32,32,0,0,0,32-32V352A32,32,0,0,0,480,320Z"
+                    opacity="0.4"
+                    class="fa-secondary"
+                  ></path>
+                  <path
+                    fill="currentColor"
+                    d="M160,0H32A32,32,0,0,0,0,32V416a96,96,0,0,0,192,0V32A32,32,0,0,0,160,0ZM96,440a24,24,0,1,1,24-24A24,24,0,0,1,96,440Zm32-184H64V192h64Zm0-128H64V64h64Z"
                     class="fa-primary"
                   ></path>
                 </g>

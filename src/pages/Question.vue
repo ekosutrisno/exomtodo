@@ -2,7 +2,7 @@
     <div class="max-w-7xl mx-auto p-2">
       <div class="flex flex-col items-center justify-center">
             <div class="w-full px-2 flex items-center justify-center">
-               <input @keyup.enter="searchQuestion" v-model="inputSearch" type="text" placeholder="Search a question (Press “/” to focus)"  class="py-3 px-4 shadow-lg rounded w-full max-w-lg mt-6 focus:outline-none ring-2 ring-green-secondary ring-opacity-0 focus:ring-opacity-40"/>
+               <input @keyup.enter="searchQuestion" v-model="inputSearch" type="text" placeholder="Search (Press “/” to focus)"  class="py-3 px-4 shadow-lg rounded w-full max-w-lg mt-6 focus:outline-none ring-2 ring-green-secondary ring-opacity-0 focus:ring-opacity-40"/>
             </div>
          <h1 class="md:text-6xl text-2xl mt-2 lg:mt-8 font-semibold text-gray-900">Question and Answer</h1>
          <p class="lg:text-center mt-4 text-xl">Every team has a unique process for shipping software.<br class="hidden lg:block"/> Use an out-of-the-box workflow, or create one to match the way your team works.</p>

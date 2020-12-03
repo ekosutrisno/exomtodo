@@ -74,8 +74,8 @@
     </section>
     <section class="flex px-2 pb-24 lg:pb-8 pt-8 items-center justify-center h-10 border-t-2 border-gray-200">
       <p
-        class="text-sm inline-flex"
-      ><span>&copy; {{(new Date()).getFullYear()}} Eko MTodo Foundations </span> <span>- All Rights Reserved</span>
+        class="text-sm flex flex-col items-center md:flex-row"
+      ><span class="mr-2">&copy; {{(new Date()).getFullYear()}} Eko MTodo Foundations </span> <span> All Rights Reserved</span>
       </p>
     </section>
 </template>
