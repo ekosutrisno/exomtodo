@@ -1,5 +1,8 @@
 module.exports = {
-   purge: [],
+   purge: [
+    './src/**/*.html',
+    './src/**/*.vue'
+   ],
    darkMode: false, // or 'media' or 'class'
    theme: {
      extend: {
@@ -10,7 +13,7 @@ module.exports = {
         'gray-primary': '#edf2f7',
        },
        fontFamily:{
-        sans: [
+        exo: [
           'Quicksand',
           'system-ui',
           'sans-serif'
