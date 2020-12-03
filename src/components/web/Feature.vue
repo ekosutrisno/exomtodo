@@ -1,7 +1,7 @@
 <template>
    <div class="bg-gray-50">
       <div class="max-w-7xl mx-auto p-2">
-        <h1 class="text-center lg:my-16 text-2xl font-semibold text-gray-900">Eko/<span class="text-green-secondary">MTodo</span> easy to manage</h1>
+        <h1 class="text-center lg:my-16 text-2xl font-semibold text-gray-900">Eko/<span class="text-green-secondary">MTodo</span></h1>
      <div class="grid lg:grid-cols-3 gap-3">
         <div class="flex flex-col items-center">
            <One/>

@@ -1,5 +1,5 @@
 <template>
-   <div class="w-full shadow-sm sticky top-0 bg-gray-50">
+   <div class="w-full shadow-sm sticky z-50 top-0 bg-gray-50">
       <div class="max-w-7xl mx-auto flex items-center justify-between p-2">
          <router-link to="/" class="focus:outline-none">
          <span class="font-bold text-gray-700 text-3xl">Eko/</span>

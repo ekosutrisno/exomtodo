@@ -2,7 +2,7 @@
    <div class="hero-background h-full">
       <div class="max-w-7xl mx-auto p-4">
          <div class="flex flex-col items-center justify-center">
-         <h1 class="text-6xl mt-6 lg:mt-20 font-semibold text-gray-900">Daily Task Management</h1>
+         <h1 class="md:text-6xl text-2xl mt-6 lg:mt-20 font-semibold text-gray-900">Daily Task Management</h1>
          <p class="lg:text-center mt-4 text-xl">Every team has a unique process for shipping software.<br class="hidden lg:block"/> Use an out-of-the-box workflow, or create one to match the way your team works.</p>
          <button class="py-2 mt-10 inline-flex items-center space-x-2 px-5 uppercase font-medium bg-green-secondary  hover:bg-green-light focus:outline-none shadow-lg text-gray-50 transition rounded">
               <span> Register for free</span> 

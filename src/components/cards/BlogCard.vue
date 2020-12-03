@@ -4,22 +4,28 @@
       <img class="w-full h-full object-cover" :src="blog.imageUrl" />
     </div>
     <div class="h-full w-full rounded-l-xl overflow-hidden py-5 px-8">
-      <div class="flex items-start justify-between">
+      <div class="flex flex-col md:flex-row items-start justify-between">
         <div class="inline-block">
           <span class="font-semibold text-2xl block text-gray-700">{{ blog.blogTitle }} <i v-if="blog.edited" class="text-gray-400" style="font-size:0.7rem">edited</i> </span>
-          <span class="text-xs text-gray-700 inline-flex space-x-1 items-center mt-2">
-            <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+          <span class="text-xs text-gray-700 block md:inline-flex md:space-x-1 items-center mt-2">
+            <div class="inline-flex space-x-1 mr-2 md:mr-0">
+              <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
             </svg>
             <p>{{ blog.publishedAt }}</p>
-            <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            </div>
+            <div class="inline-flex space-x-1">
+              <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd" />
             </svg>
             <p> {{blog.writer}} </p>
-            <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            </div>
+            <div class="inline-flex space-x-1">
+              <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
             </svg>
             <p> {{blog.readTime}}  min of read</p>
+            </div>
           </span>
         </div>
         <div class="inline-flex items-center space-x-2 mt-1">

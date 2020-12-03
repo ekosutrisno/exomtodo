@@ -48,10 +48,10 @@
         <span class="text-green-secondary block">recruitment@exoapp.co.id</span>
       </div>
       <div>
-        <span class="block mb-3">ExoApp MTodo Corporations</span>
+        <span class="block mb-3">Exo MTodo Foundations</span>
          <router-link to="/" class="focus:outline-none">
-         <span class="font-bold text-gray-700 text-5xl">Eko/</span>
-         <span class="font-semibold text-green-secondary text-5xl">MTodo</span>
+         <span class="font-bold text-gray-700 text-3xl">Eko/</span>
+         <span class="font-semibold text-green-secondary text-3xl">MTodo</span>
          </router-link>
         <span class="text-2xl">
           <i
@@ -72,10 +72,11 @@
         </span>
       </div>
     </section>
-    <section class="flex pb-24 lg:pb-8 pt-8 items-center justify-center h-10 border-t-2 border-gray-200">
+    <section class="flex px-2 pb-24 lg:pb-8 pt-8 items-center justify-center h-10 border-t-2 border-gray-200">
       <p
-        class="text-sm"
-      >&copy; {{(new Date()).getFullYear()}} ExoApp MTodo Corporations - All Rights Reserved</p>
+        class="text-sm inline-flex"
+      ><span>&copy; {{(new Date()).getFullYear()}} Eko MTodo Foundations </span> <span>- All Rights Reserved</span>
+      </p>
     </section>
 </template>
 

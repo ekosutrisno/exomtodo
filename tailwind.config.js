@@ -1,8 +1,5 @@
 module.exports = {
-   purge: [
-    './src/**/*.html',
-    './src/**/*.vue'
-   ],
+  purge: ['./src/**/*.{vue,js,ts,jsx,tsx}'],
    darkMode: false, // or 'media' or 'class'
    theme: {
      extend: {
@@ -13,16 +10,13 @@ module.exports = {
         'gray-primary': '#edf2f7',
        },
        fontFamily:{
-        exo: [
-          'Quicksand',
-          'system-ui',
-          'sans-serif'
-        ]
+        exo: [ 'Quicksand', 'system-ui', 'sans-serif']
        }
      },
    },
    variants: {
-     ringOpacity:['hover','focus','group-hover']
+     ringOpacity:['hover','focus','group-hover'],
+     extend:{}
    },
    plugins: [],
  }
