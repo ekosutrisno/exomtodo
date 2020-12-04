@@ -3,7 +3,7 @@ import Home from './pages/Home.vue';
 import AboutMe from './pages/AboutMe.vue';
 import Question from './pages/Question.vue';
 import Blog from './pages/Blog.vue';
-import Test from './pages/Test.vue';
+import LoginPage from './pages/LoginPage.vue';
 import WebLayout from './layouts/WebLayout.vue';
 import AppLayout from './layouts/AppLayout.vue';
 
@@ -14,11 +14,11 @@ const routes = [
      children:[
       {
         path: '/login',
-        component: Test
+        component: LoginPage
       },
       {
         path: '/register',
-        component: Test
+        component: LoginPage
       },
 
      ]

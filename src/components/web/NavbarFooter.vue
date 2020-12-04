@@ -164,7 +164,7 @@
       </div>
       <div class="flex flex-col md:flex-row items-center justify-between">
         <router-link
-          to="/"
+          to="/login"
           class="hover:text-green-light hover:no-underline transition-colors duration-300 ease-linear"
         >
           <div class="flex flex-col md:flex-row items-center">

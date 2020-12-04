@@ -11,7 +11,10 @@ module.exports = {
        },
        fontFamily:{
         exo: [ 'Quicksand', 'system-ui', 'sans-serif']
-       }
+       },
+       spacing: {
+        100: '32rem',
+      },
      },
    },
    variants: {

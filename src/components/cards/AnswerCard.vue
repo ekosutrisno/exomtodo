@@ -1,12 +1,12 @@
 <template>
    <div class="mt-7 pt-4 border-t">
-      <div class="flex items-center justify-between py-2">
+      <div class="flex flex-col lg:flex-row items-center justify-between py-2">
       <div class="inline-flex space-x-2 items-center font-semibold text-gray-800">
          <button class="w-10 h-10 focus:outline-none rounded-full">
             <img class="w-full h-full object-cover" :src="answer.imageUrl" :alt="`user-avtr-${answer.id}`">
          </button>
          <span class="">{{answer.author}}</span>
-         <span class="text-gray-400 font-medium text-sm">{{answer.createdAt}} sec ago</span>
+         <span class="text-gray-400 font-medium text-sm hidden lg:block">{{answer.createdAt}} sec ago</span>
       </div>
       <div class="inline-flex space-x-2 items-center text-gray-800">
          <button @click="isLiked = !isLiked" :class="[isLiked ? 'text-pink-500' : 'text-gray-400']" class="hover:text-pink-500 focus:outline-none rounded-full font-medium shadow-sm">
