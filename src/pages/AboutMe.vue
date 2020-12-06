@@ -217,9 +217,9 @@ import TimeLineCard from '../components/cards/TimeLineCard.vue'
             },
          ]
       })
-      return{
-         ...toRefs(state)
-      }
+         return{
+            ...toRefs(state)
+         }
       }
    }
 </script>

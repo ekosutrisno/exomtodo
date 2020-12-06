@@ -1,4 +1,4 @@
-import {createRouter, createWebHistory} from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import Home from './pages/Home.vue';
 import AboutMe from './pages/AboutMe.vue';
 import Question from './pages/Question.vue';
@@ -8,10 +8,10 @@ import WebLayout from './layouts/WebLayout.vue';
 import AppLayout from './layouts/AppLayout.vue';
 
 const routes = [
-   {
-     path: '/app',
-     component: AppLayout,
-     children:[
+  {
+    path: '/app',
+    component: AppLayout,
+    children: [
       {
         path: '/login',
         component: LoginPage
@@ -21,34 +21,34 @@ const routes = [
         component: LoginPage
       },
 
-     ]
-   },
-   {
-    path:'/web',
+    ]
+  },
+  {
+    path: '/web',
     component: WebLayout,
-    children:[
+    children: [
       {
         path: '/',
         component: Home
       },
-       {
-         path: '/question',
-         component: Question
-       },
-       {
-         path: '/about-me',
-         component: AboutMe
-       },
-       {
-         path: '/blog',
-         component: Blog
-       },
+      {
+        path: '/question',
+        component: Question
+      },
+      {
+        path: '/about-me',
+        component: AboutMe
+      },
+      {
+        path: '/blog',
+        component: Blog
+      },
     ]
-   },
- ]
+  },
+]
 
- export default createRouter({
+export default createRouter({
   history: createWebHistory(),
   routes: routes
- })
+})
 
