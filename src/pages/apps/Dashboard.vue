@@ -156,7 +156,9 @@
                   </button>
                 </div>
                 <div class="w-full flex items-center mt-3 justify-between">
-                  <router-link to="/" class="w-full py-2 px-3 focus:outline-none bg-green-400 rounded-xl text-gray-50 font-medium hover:bg-green-500 transition">Done</router-link>
+                  <router-link to="/" class="w-full py-2 px-3 focus:outline-none bg-green-400 rounded-xl text-gray-50 font-medium hover:bg-green-500 transition text-center">
+                  Done
+                  </router-link>
                 </div>
               </div>
               <!-- End New Card Sect -->
@@ -526,7 +528,7 @@
               <span class="text-xs font-semibold text-gray-400">2/7</span>
             </div>
             <div class="w-full h-2 shadow-sm rounded-full bg-gray-200 relative cursor-pointer hover:bg-gray-300 transition">
-              <div class="w-2/5 shadow-sm h-2 rounded-full bg-cyan-500 absolute inset-0"></div>
+              <div class="w-2/5 shadow-sm h-2 rounded-full bg-blue-500 absolute inset-0"></div>
             </div>
           </div>
           <div class="inline-block w-full space-y-2">
