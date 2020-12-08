@@ -1,5 +1,6 @@
 <template>
-   <div>
+  <!-- Wrapper -->
+  <div class="h-full md:max-h-screen bg-gray-100 flex flex-col">
        <router-view></router-view>
    </div>
 </template>

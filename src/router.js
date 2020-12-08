@@ -4,13 +4,29 @@ import AboutMe from './pages/AboutMe.vue';
 import Question from './pages/Question.vue';
 import Blog from './pages/Blog.vue';
 import LoginPage from './pages/LoginPage.vue';
+
+// Layouts
 import WebLayout from './layouts/WebLayout.vue';
 import AppLayout from './layouts/AppLayout.vue';
+import AuthLayout from './layouts/AuthLayout.vue';
+
+// Apps Components
+import Dashboard from './pages/apps/Dashboard.vue';
 
 const routes = [
   {
     path: '/app',
     component: AppLayout,
+    children: [
+      {
+        path: '/dashboard',
+        component: Dashboard
+      },
+    ]
+  },
+  {
+    path: '/auth',
+    component: AuthLayout,
     children: [
       {
         path: '/login',
