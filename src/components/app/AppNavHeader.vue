@@ -4,10 +4,10 @@
      <div class="flex flex-row max-w-7xl mx-auto items-center justify-between flex-none py-8 rounded w-full h-14 px-4">
          <!-- End Left Nav -->
       <div class="inline-flex w-full items-center">
-        <div class="font-semibold inline-flex text-2xl">
+        <router-link to="/" class="font-semibold inline-flex text-2xl">
           <div class="rounded-full bg-green-100 flex items-center justify-center text-green-500 px-2">EKO</div>
           <span class="font-bold text-gray-800">/MTodo</span>
-        </div>
+        </router-link>
         <div class="md:flex hidden relative w-full ml-5">
           <input class="py-1.5 pl-12 rounded-full text-sm w-full transition max-w-sm bg-gray-50 hover:bg-gray-100 focus:bg-gray-100 ring-1 ring-gray-200 focus:outline-none" type="text" placeholder="Search Everything" />
           <svg class="w-5 absolute left-4 top-2 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">

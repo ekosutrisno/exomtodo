@@ -35,7 +35,7 @@
               <!-- End Card Task Ready -->
              
               <!-- New Card Sect -->
-              <transition class="transition">
+              <transition appear-active-class="trx-custom">
                 <div v-if="newTask"  class="bg-white flex flex-col max-h-80 w-full mx-auto rounded-lg p-5 font-exo hover:shadow-lg cursor-pointer transition">
                   <div class="w-full flex items-center py-2 justify-between">
                     <div>
@@ -100,7 +100,7 @@
               </span>
             </div>
             <div class="flex flex-col px-1 space-y-2 max-h-98 overflow-y-auto">
-              <!-- Card On Progress Here -->
+              <!-- Card On Progress Here -->         
                  <TaskCard v-for="task in taskOnProgress" :key="task.taskId" :task="task" />
                 <div @click="newTask = !newTask" class="bg-transparent w-full lg:w-56 flex items-center justify-center cursor-pointer h-20 mx-auto transition  rounded-lg p-2 border border-green-300 hover:bg-green-100 border-dashed">
                   <div class="w-full text-center">

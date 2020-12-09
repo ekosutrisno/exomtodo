@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.router-link-active{
-   @apply text-green-secondary;
+.router-link-active {
+  @apply text-green-secondary;
+}
+
+.trx-custom {
+  @apply transition;
+  @apply duration-100;
 }
