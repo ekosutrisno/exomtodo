@@ -1,26 +1,12 @@
 <template>
-   <!-- Navbar Header -->
-   <AppNavHeader/>
-    <!-- End Navbar Header -->
 
+   <AppNavHeader/>
     <!-- Content -->
-    <div class="max-w-7xl mx-auto">
-       <div class="flex-1 flex flex-col-reverse md:flex-row">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex-1 flex flex-col-reverse md:flex-row">
       <div class="md:flex-1 p-4 md:p-5">
         <!-- Header Content-->
-        <div class="flex flex-col md:flex-row md:items-center justify-between">
-          <h1 class="font-semibold text-xl mb-2 md:mb-0 md:text-4xl">Your Task Story</h1>
-          <div class="inline-flex space-x-1">
-            <img class="rounded-full border border-white w-9 h-9 cursor-pointer" src="https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/scientist_einstein_avatar_professor-128.png" alt="i-1" />
-            <img class="rounded-full border border-white w-9 h-9 cursor-pointer" src="https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/10_avatar-128.png" alt="i-1" />
-            <img class="rounded-full border border-white w-9 h-9 cursor-pointer" src="https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/girl_female_woman_avatar-128.png" alt="i-1" />
-            <button type="button" class="focus:outline-none rounded-full border-2 border-green-200 border-dashed p-2">
-              <svg class="w-4 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-              </svg>
-            </button>
-          </div>
-        </div>
+        <HeaderContent/>
         <!-- End Header Content -->
 
         <!-- Start Tasks -->
@@ -38,10 +24,10 @@
               </span>
             </div>
             <!-- Task -->
-            <div class="flex flex-col space-y-2 max-h-98 overflow-y-auto">
-              <!-- Card Task Ready In Here -->
-              <TaskCard v-for="i in 10" :key="i"/>
-              <div @click="newTask = !newTask" class="bg-transparent flex items-center justify-center cursor-pointer h-20 w-56 mx-auto transition  rounded-lg p-2 border border-green-300 hover:bg-green-100 border-dashed">
+            <div class="flex flex-col px-1 space-y-2 max-h-98 overflow-y-auto">
+              <!-- Card Task Ready In Here --> 
+              <TaskCard  v-for="task in taskReady" :key="task.taskId" :task="task" />
+              <div @click="newTask = !newTask" class="bg-transparent w-full lg:w-56 flex items-center justify-center cursor-pointer h-20 mx-auto transition  rounded-lg p-2 border border-green-300 hover:bg-green-100 border-dashed">
                 <div class="w-full text-center">
                   <button  class="focus:outline-none text-gray-500 font-semibold text-sm hover:text-green-600">+ add card</button>
                 </div>
@@ -113,14 +99,14 @@
                 </svg>
               </span>
             </div>
-            <div class="flex flex-col space-y-2 max-h-98 overflow-y-auto">
+            <div class="flex flex-col px-1 space-y-2 max-h-98 overflow-y-auto">
               <!-- Card On Progress Here -->
-                 <TaskCard v-for="i in 3" :key="i"/>
-              <div @click="newTask = !newTask" class="bg-transparent flex items-center justify-center cursor-pointer h-20 w-56 mx-auto transition  rounded-lg p-2 border border-green-300 hover:bg-green-100 border-dashed">
-                <div class="w-full text-center">
-                  <button  class="focus:outline-none text-gray-500 font-semibold text-sm hover:text-green-600">+ add card</button>
+                 <TaskCard v-for="task in taskOnProgress" :key="task.taskId" :task="task" />
+                <div @click="newTask = !newTask" class="bg-transparent w-full lg:w-56 flex items-center justify-center cursor-pointer h-20 mx-auto transition  rounded-lg p-2 border border-green-300 hover:bg-green-100 border-dashed">
+                  <div class="w-full text-center">
+                    <button  class="focus:outline-none text-gray-500 font-semibold text-sm hover:text-green-600">+ add card</button>
+                  </div>
                 </div>
-              </div>
               <!-- End Card Items Progress  -->
             </div>
           </div>
@@ -138,10 +124,10 @@
                 </svg>
               </span>
             </div>
-            <div class="flex flex-col space-y-2 max-h-98 overflow-y-auto">
+            <div class="flex flex-col px-1 space-y-2 max-h-98 overflow-y-auto">
               <!-- Card Need Review In Here -->
-                <TaskCard v-for="i in 5" :key="i"/>
-              <div @click="newTask = !newTask" class="bg-transparent flex items-center justify-center cursor-pointer h-20 w-56 mx-auto transition  rounded-lg p-2 border border-green-300 hover:bg-green-100 border-dashed">
+                <TaskCard v-for="task in taskNeedReview" :key="task.taskId" :task="task" />
+              <div @click="newTask = !newTask" class="bg-transparent w-full lg:w-56 flex items-center justify-center cursor-pointer h-20 mx-auto transition  rounded-lg p-2 border border-green-300 hover:bg-green-100 border-dashed">
                 <div class="w-full text-center">
                   <button  class="focus:outline-none text-gray-500 font-semibold text-sm hover:text-green-600">+ add card</button>
                 </div>
@@ -163,10 +149,10 @@
                 </svg>
               </span>
             </div>
-            <div class="flex flex-col space-y-2 max-h-98 overflow-y-auto">
+            <div class="flex flex-col px-1 space-y-2 max-h-98 overflow-y-auto">
               <!-- Card Item Done In Here-->
-              <TaskCard v-for="i in 3" :key="i"/>
-              <div @click="newTask = !newTask" class="bg-transparent flex items-center justify-center cursor-pointer h-20 w-56 mx-auto transition  rounded-lg p-2 border border-green-300 hover:bg-green-100 border-dashed">
+              <TaskCard v-for="task in taskDone" :key="task.taskId" :task="task" />
+              <div @click="newTask = !newTask" class="bg-transparent w-full lg:w-56 flex items-center justify-center cursor-pointer h-20 mx-auto transition  rounded-lg p-2 border border-green-300 hover:bg-green-100 border-dashed">
                 <div class="w-full text-center">
                   <button  class="focus:outline-none text-gray-500 font-semibold text-sm hover:text-green-600">+ add card</button>
                 </div>
@@ -179,36 +165,38 @@
         <!-- End Tasks -->
       </div>
 
-      <!-- Left Content Sidebar -->
       <div class="md:w-1/5 flex-none h-full border-l px-4">
-          <!-- In Progress Card -->
           <ProgresBarCard/>
-          <!-- End In Progress -->
-
-        <!-- Recent Activity -->
           <RecentActivityCard/>
-        <!-- End Recent Activity -->
-      </div>
-      <!-- End Left Content Sidebar -->
     </div>
-    
-    </div>
-    <!-- End Content -->
+  </div>
+</div>
 </template>
 
 <script>
-import { ref } from 'vue'
+import { reactive, ref, toRefs } from 'vue'
+import {taskDone,taskNeedReview,taskOnProgress,taskReady} from '../../assets/data/Tasks';
 import AppNavHeader from '../../components/app/AppNavHeader.vue'
 import ProgresBarCard from '../../components/app/ProgresBarCard.vue'
 import RecentActivityCard from '../../components/app/RecentActivityCard.vue'
 import TaskCard from '../../components/app/TaskCard.vue'
+import HeaderContent from '../../components/app/HeaderContent.vue'
    export default {
-    components: { AppNavHeader, ProgresBarCard, RecentActivityCard,TaskCard  },
-
-         setup(){
-      const newTask = ref(true)
+    components: { 
+        AppNavHeader,
+        ProgresBarCard, 
+        RecentActivityCard,
+        TaskCard,
+        HeaderContent  
+      },
+      setup(){      
+        const newTask = ref(false)
+        const state = reactive({
+          taskDone, taskNeedReview,taskOnProgress,taskReady
+        })
 
       return{
+        ...toRefs(state),
         newTask
       }
     }
