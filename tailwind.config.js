@@ -13,8 +13,9 @@ module.exports = {
         exo: [ 'Quicksand', 'system-ui', 'sans-serif']
        },
        spacing: {
-        98: '28.5rem',
+        98: '30rem',
         100: '32rem',
+        102: '35rem',
       },
      },
    },

@@ -24,7 +24,7 @@ const taskReady =[
      members:[
        {
          id:'852735a2-9048-4804-8010-7bca4dd445af',
-         avatar: 'https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/suicide_squad_woman_avatar_joker-128.png'
+         avatar: 'https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/7_avatar-128.png'
        }
      ],
      tag:{
@@ -47,7 +47,7 @@ const taskReady =[
      members:[
        {
          id:'852735a2-9048-4804-8010-7bca4dd445af',
-         avatar: 'https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/suicide_squad_woman_avatar_joker-128.png'
+         avatar: 'https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/9_avatar-128.png'
        }
      ],
      tag:{
@@ -67,7 +67,7 @@ const taskReady =[
      members:[
        {
          id:'852735a2-9048-4804-8010-7bca4dd445af',
-         avatar: 'https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/suicide_squad_woman_avatar_joker-128.png'
+         avatar: 'https://cdn0.iconfinder.com/data/icons/female-styles/500/woman-pretty-bg-128.png'
        }
      ],
      tag:{
@@ -87,7 +87,7 @@ const taskReady =[
      members:[
        {
          id:'852735a2-9048-4804-8010-7bca4dd445af',
-         avatar: 'https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/suicide_squad_woman_avatar_joker-128.png'
+         avatar: 'https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/11_avatar-128.png'
        }
      ],
      tag:{
@@ -110,7 +110,7 @@ const taskReady =[
      members:[
        {
          id:'852735a2-9048-4804-8010-7bca4dd445af',
-         avatar: 'https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/suicide_squad_woman_avatar_joker-128.png'
+         avatar: 'https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/girl_avatar_child_kid-128.png'
        }
      ],
      tag:{
@@ -133,7 +133,7 @@ const taskReady =[
      members:[
        {
          id:'852735a2-9048-4804-8010-7bca4dd445af',
-         avatar: 'https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/suicide_squad_woman_avatar_joker-128.png'
+         avatar: 'https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/4_avatar-128.png'
        }
      ],
      tag:{
@@ -153,7 +153,7 @@ const taskReady =[
      members:[
        {
          id:'852735a2-9048-4804-8010-7bca4dd445af',
-         avatar: 'https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/suicide_squad_woman_avatar_joker-128.png'
+         avatar: 'https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/3_avatar-128.png'
        }
      ],
      tag:{
@@ -173,7 +173,7 @@ const taskReady =[
      members:[
        {
          id:'852735a2-9048-4804-8010-7bca4dd445af',
-         avatar: 'https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/suicide_squad_woman_avatar_joker-128.png'
+         avatar: 'https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/10_avatar-128.png'
        }
      ],
      tag:{
@@ -193,7 +193,7 @@ const taskReady =[
      members:[
        {
          id:'852735a2-9048-4804-8010-7bca4dd445af',
-         avatar: 'https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/suicide_squad_woman_avatar_joker-128.png'
+         avatar: 'https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/boy_person_avatar_kid-128.png'
        }
      ],
      tag:{

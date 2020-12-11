@@ -8,19 +8,21 @@
       <span v-else-if="task.tag.tagId == 4" class="py-0.5 px-2.5 bg-yellow-100 text-yellow-700 font-bold text-xs rounded-full">Frontend</span>
       <span v-else-if="task.tag.tagId == 5" class="py-0.5 px-2.5 bg-pink-100 text-pink-700 font-bold text-xs rounded-full">Backend</span>
     </div>
-      <div class="relative">
-         <div v-if="option" class="w-32 absolute z-50 shadow-2xl h-auto left-0 top-0 -ml-28 mt-6 py-1 bg-gray-50 rounded flex flex-col overflow-hidden">
-            <button type="button" class="w-full text-xs group transition-colors duration-300 text-gray-700 focus:outline-none py-2 px-3 hover:text-gray-900 hover:bg-gray-100 inline-flex space-x-2">
-               <span>Edit</span>
-            </button>
-            <button type="button" class="w-full text-xs group transition-colors duration-300 text-gray-700 focus:outline-none py-2 px-3 hover:text-gray-900 hover:bg-gray-100 inline-flex space-x-2">
-               <span>Archive</span>
-            </button>
-            <button type="button" class="w-full text-xs group transition-colors duration-300 text-gray-700 focus:outline-none py-2 px-3 hover:text-gray-900 hover:bg-gray-100 inline-flex space-x-2">
-               <span>Delete</span>
-            </button>
-         </div>
-         <svg @click="option = !option" class="cursor-pointer w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <div @click="hideMenuOption" class="relative">
+         <transition-group name="dropdown-fade">
+            <div v-click-away="hideMenuOption" v-if="option" class="w-32 absolute z-50 shadow-2xl h-auto left-0 top-0 -ml-28 mt-6 py-1 bg-gray-50 rounded flex flex-col overflow-hidden">
+               <button @click="eventPrint('Edit')" type="button" class="w-full text-xs group transition-colors duration-300 text-gray-700 focus:outline-none py-2 px-3 hover:text-gray-900 hover:bg-gray-100 inline-flex space-x-2">
+                  <span>Edit</span>
+               </button>
+               <button @click="eventPrint('Archive')" type="button" class="w-full text-xs group transition-colors duration-300 text-gray-700 focus:outline-none py-2 px-3 hover:text-gray-900 hover:bg-gray-100 inline-flex space-x-2">
+                  <span>Archive</span>
+               </button>
+               <button @click="eventPrint('Delete')" type="button" class="w-full text-xs group transition-colors duration-300 text-gray-700 focus:outline-none py-2 px-3 hover:text-gray-900 hover:bg-gray-100 inline-flex space-x-2">
+                  <span>Delete</span>
+               </button>
+            </div>
+            </transition-group>
+         <svg class="cursor-pointer w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
          </svg>
       </div>
@@ -65,8 +67,18 @@ import { ref } from 'vue'
       setup(){
          const option = ref(false)
 
+         const hideMenuOption = () => {
+            option.value = !option.value
+         }
+
+         const eventPrint = (val) => {
+            console.log(val);
+         }
+
          return{
-            option
+            option,
+            hideMenuOption,
+            eventPrint
          }
       }
       

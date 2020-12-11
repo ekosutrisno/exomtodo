@@ -22,9 +22,9 @@
       class="h-full pt-16 pb-5 px-4 lg:px-0 flex flex-col lg:flex-row items-start justify-center lg:space-x-56"
     >
       <div class="mb-5 lg:mb-0">
-        <span class="block">Satrio Tower Building, 25th Floor</span>
-        <span class="block">Jl. Prof. Dr. Satrio Kav C4</span>
-        <span class="block">Jakarta Selatan 12950</span>
+        <span class="block">Muara City Tower, 0th Floor</span>
+        <span class="block">Jl. Berangin Indah No 24, Sungai Are</span>
+        <span class="block">Muaradua 32173</span>
         <span class="block">Indonesia</span>
         <a class="text-base hover:text-green-secondary" href="/home">Rodamap detail</a>
       </div>
@@ -39,37 +39,20 @@
         </span>
         <span class="block">
           Email:
-          <span class="text-green-secondary">info@xsis.co.id</span>
+          <span class="text-green-secondary">info@mtodo.co.id</span>
         </span>
         <span class="block">
           Phone:
           <span class="text-green-secondary">(+62) 21 2788 3570</span>
         </span>
-        <span class="text-green-secondary block">recruitment@exoapp.co.id</span>
+        <span class="text-green-secondary block">ekomtodo@mtodo.co.id</span>
       </div>
       <div>
         <span class="block mb-3">Exo MTodo Foundations</span>
          <router-link to="/" class="focus:outline-none">
-         <span class="font-bold text-gray-700 text-3xl">Eko/</span>
-         <span class="font-semibold text-green-secondary text-3xl">MTodo</span>
+          <span class="font-bold text-gray-700 text-3xl">Eko/</span>
+          <span class="font-semibold text-green-secondary text-3xl">MTodo</span>
          </router-link>
-        <span class="text-2xl">
-          <i
-            class="fab fa-fw fa-twitter cursor-pointer text-gray-600 hover:text-green-secondary transition-colors duration-150 ease-in-out"
-          ></i>
-          <i
-            class="fab fa-fw fa-facebook cursor-pointer text-gray-600 hover:text-green-secondary transition-colors duration-150 ease-in-out"
-          ></i>
-          <i
-            class="fab fa-fw fa-instagram cursor-pointer text-gray-600 hover:text-green-secondary transition-colors duration-150 ease-in-out"
-          ></i>
-          <i
-            class="fab fa-fw fa-linkedin cursor-pointer text-gray-600 hover:text-green-secondary transition-colors duration-150 ease-in-out"
-          ></i>
-          <i
-            class="fab fa-fw fa-youtube cursor-pointer text-gray-600 hover:text-green-secondary transition-colors duration-150 ease-in-out"
-          ></i>
-        </span>
       </div>
     </section>
     <section class="flex px-2 pb-24 lg:pb-8 pt-8 items-center justify-center h-10 border-t-2 border-gray-200">

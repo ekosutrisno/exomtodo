@@ -48,6 +48,6 @@
 
 <script>
    export default {
-      name:'MenuItemsLg' 
+      name:'MenuItemsLg',
    }
 </script>

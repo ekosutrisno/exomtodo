@@ -6,23 +6,23 @@
         <div class="flex flex-col items-center">
            <One/>
             <h1 class="text-center mt-3 text-2xl font-medium text-gray-900 uppercase">Modular</h1>
-           <div class="px-8 py-3">
-               <p class="tracking-wide leading-7 font-normal">Nuxt is based on a powerful modular architecture. You can choose from more than 50 modules to make your development faster and easier. You don't have to reinvent the wheel to get PWA benefits, add Google Analytics to your page or generate a sitemap.</p>
+           <div class="px-2 md:px-8 py-3">
+               <p class="tracking-wide leading-7 font-normal">Eko/MTodo is based on a powerful modular architecture. You can choose from more than 50 modules to make your development faster and easier. You don't have to reinvent the wheel to get PWA benefits, add Google Analytics to your page or generate a sitemap.</p>
            </div>
         </div>
         <div class="flex flex-col items-center">
            <Two/>
             <h1 class="text-center mt-3 text-2xl font-medium text-gray-900 uppercase">Personal</h1>
-           <div class="px-8 py-3">
-               <p class="tracking-wide leading-7 font-normal">With Nuxt.js, your application will be optimized out of the box. We do our best to build performant applications by utilizing Vue.js and Node.js best practices. To squeeze every unnecessary bit out of your app Nuxt includes a bundle analyzer and lots of opportunities to fine-tune your app.</p>
+           <div class="px-2 md:px-8 py-3">
+               <p class="tracking-wide leading-7 font-normal">With Eko/MTodo, your daily tasks will be optimized out of the box. We do our best to build performant tasks by utilizing best practices. To squeeze every unnecessary bit out of your app Eko/MTodo includes a bundle analyzer and lots of opportunities to fine-tune your task.</p>
            </div>
          </div>
         <div class="flex flex-col items-center">
            <Three/>
             <h1 class="text-center mt-3 text-2xl font-medium text-gray-900 uppercase">Enjoyable</h1>
-           <div class="px-8 py-3">
+           <div class="px-2 md:px-8 py-3">
                <p class="tracking-wide leading-7 font-normal">Our main focus is the Developer Experience. 
-                  We love Nuxt.js and continuously improve the framework so you love it too! 💚
+                  We love Eko/MTodo and continuously improve so you love it too! 💚
                   Expect appealing solutions, descriptive error messages, powerful defaults and detailed documentation. 
                   If questions or problems come up, our helpful community will help you out.
                </p>
