@@ -17,11 +17,13 @@
               <div>
                 <span class="font-semibold text-sm"> Task Ready </span>
               </div>
-              <span>
+              <div @click="showMenuOptionReady = ! showMenuOptionReady" class="relative">
                 <svg class="cursor-pointer w-6 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
                 </svg>
-              </span>
+                <MenuItemsLg v-if="showMenuOptionReady"/>
+                <MenuItemsSm v-if="showMenuOptionReady"/>
+              </div>
             </div>
             <!-- Task -->
             <div class="flex flex-col px-1 space-y-2 max-h-98 overflow-y-auto">
@@ -93,11 +95,13 @@
               <div>
                 <span class="font-semibold text-sm"> On Progress </span>
               </div>
-              <span>
+              <div @click="showMenuOptionProgress = ! showMenuOptionProgress" class="relative">
                 <svg class="cursor-pointer w-6 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
                 </svg>
-              </span>
+                <MenuItemsLg v-if="showMenuOptionProgress"/>
+                <MenuItemsSm v-if="showMenuOptionProgress"/>
+              </div>
             </div>
             <div class="flex flex-col px-1 space-y-2 max-h-98 overflow-y-auto">
               <!-- Card On Progress Here -->         
@@ -118,11 +122,13 @@
               <div>
                 <span class="font-semibold text-sm"> Needs Review </span>
               </div>
-              <span>
+              <div @click="showMenuOptionReview = ! showMenuOptionReview" class="relative">
                 <svg class="cursor-pointer w-6 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
                 </svg>
-              </span>
+                <MenuItemsLg v-if="showMenuOptionReview"/>
+                <MenuItemsSm v-if="showMenuOptionReview"/>
+              </div>
             </div>
             <div class="flex flex-col px-1 space-y-2 max-h-98 overflow-y-auto">
               <!-- Card Need Review In Here -->
@@ -143,11 +149,13 @@
               <div>
                 <span class="font-semibold text-sm"> Done </span>
               </div>
-              <span>
+              <div @click="showMenuOptionDone = ! showMenuOptionDone" class="relative">
                 <svg class="cursor-pointer w-6 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
                 </svg>
-              </span>
+                <MenuItemsLg v-if="showMenuOptionDone"/>
+                <MenuItemsSm v-if="showMenuOptionDone"/>
+              </div>
             </div>
             <div class="flex flex-col px-1 space-y-2 max-h-98 overflow-y-auto">
               <!-- Card Item Done In Here-->
@@ -174,30 +182,41 @@
 </template>
 
 <script>
-import { reactive, ref, toRefs } from 'vue'
+import { reactive, toRefs } from 'vue'
 import {taskDone,taskNeedReview,taskOnProgress,taskReady} from '../../assets/data/Tasks';
 import AppNavHeader from '../../components/app/AppNavHeader.vue'
 import ProgresBarCard from '../../components/app/ProgresBarCard.vue'
 import RecentActivityCard from '../../components/app/RecentActivityCard.vue'
 import TaskCard from '../../components/app/TaskCard.vue'
 import HeaderContent from '../../components/app/HeaderContent.vue'
+import MenuItemsLg from '../../components/app/MenuItemsLg.vue'
+import MenuItemsSm from '../../components/app/MenuItemsSm.vue';
+
    export default {
     components: { 
         AppNavHeader,
         ProgresBarCard, 
         RecentActivityCard,
         TaskCard,
-        HeaderContent  
+        HeaderContent,
+        MenuItemsLg,
+        MenuItemsSm
       },
       setup(){      
-        const newTask = ref(false)
         const state = reactive({
-          taskDone, taskNeedReview,taskOnProgress,taskReady
+          taskDone, 
+          taskNeedReview,
+          taskOnProgress,
+          taskReady,
+          newTask: false,
+          showMenuOptionReady: false,
+          showMenuOptionProgress: false,
+          showMenuOptionReview: false,
+          showMenuOptionDone: false
         })
 
       return{
         ...toRefs(state),
-        newTask
       }
     }
    }

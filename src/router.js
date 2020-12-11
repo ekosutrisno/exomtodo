@@ -3,7 +3,10 @@ import Home from './pages/Home.vue';
 import AboutMe from './pages/AboutMe.vue';
 import Question from './pages/Question.vue';
 import Blog from './pages/Blog.vue';
+
+// Auth Layouts
 import LoginPage from './pages/LoginPage.vue';
+import DragTest from './pages/apps/DragTest.vue';
 
 // Layouts
 import WebLayout from './layouts/WebLayout.vue';
@@ -35,6 +38,10 @@ const routes = [
       {
         path: '/register',
         component: LoginPage
+      },
+      {
+        path: '/drag',
+        component: DragTest
       },
 
     ]
