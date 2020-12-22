@@ -1,7 +1,7 @@
 <template>
    <!-- Navbar Header -->
     <div class="bg-white ">
-     <div class="flex flex-row max-w-7xl mx-auto items-center justify-between flex-none py-8 rounded w-full h-14 px-4">
+     <div class="flex flex-row max-w-7xl mx-auto items-center justify-between flex-none flex-shrink-0 py-8 rounded w-full h-14 px-4">
          <!-- End Left Nav -->
       <div class="inline-flex w-full items-center">
         <router-link to="/" class="font-semibold inline-flex text-2xl">

@@ -2,7 +2,7 @@
 
    <AppNavHeader/>
     <!-- Content -->
-  <div class="max-w-7xl mx-auto">
+  <div class="max-w-7xl mx-auto flex-1">
     <div class="flex-1 flex flex-col-reverse md:flex-row">
       <div class="md:flex-1 p-4 md:p-5">
         <!-- Header Content-->
