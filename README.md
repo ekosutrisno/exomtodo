@@ -1,8 +1,8 @@
-# Eko/MTodo
+### My Portfolio [Eko Sutrisno]
 
-:author @ekosutrisno
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6b63f094-0494-4a1e-bd0f-3057f9e6626d/deploy-status)](https://app.netlify.com/sites/eko-portofolio/deploys)
 
-## Spcec
+#### Intro
 
 - Merupakan applikasi management task sehari-hari
 - Mudah digunakan
