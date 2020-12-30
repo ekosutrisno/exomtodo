@@ -13,14 +13,18 @@
   @apply duration-100;
 }
 
-.the-header {
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
-  background-color: hsla(0, 0%, 100%, 0.75);
-}
+@layer utilities {
+  @responsive {
+    .the-header {
+      -webkit-backdrop-filter: blur(12px);
+      backdrop-filter: blur(12px);
+      background-color: hsla(0, 0%, 100%, 0.75);
+    }
 
-.the-form {
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
-  background-color: hsla(0, 0%, 100%, 0.3);
+    .the-form {
+      -webkit-backdrop-filter: blur(12px);
+      backdrop-filter: blur(12px);
+      background-color: hsla(0, 0%, 100%, 0.3);
+    }
+  }
 }
