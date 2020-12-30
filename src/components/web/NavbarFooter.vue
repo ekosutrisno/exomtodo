@@ -1,5 +1,5 @@
 <template>
-  <div class="nv-transition bg-gray-50 w-full bottom-0 left-0 fixed border-t border-gray-200 lg:hidden z-10">
+  <div class="nv-transition the-header w-full bottom-0 left-0 fixed border-t border-gray-200 lg:hidden z-10">
     <div class="mx-auto lg:mx-4 py-3 px-2  md:mx-6 md:py-5 flex justify-between">
       <div class="flex flex-col md:flex-row items-center justify-around">
         <router-link

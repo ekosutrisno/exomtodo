@@ -10,14 +10,14 @@
             </div>
          </div>
 
-         <div class="p-8 mt-4">
+         <div class="p-2 md:p-8 mt-4">
             <h1 class="text-2xl">Hi, Saya <span class="font-semibold">Eko Sutrisno</span></h1>
             <h1 class="text-sm pt-2 pb-4 inline-flex space-x-2">
                <svg class="w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                </svg>
-               <a href="ekosutrisno801@gmail.com" class="font-semibold">
-                  ekosutrisno801@gmail.com
+               <a href="mailto:ekosutrisno801@gmail.com" class="font-semibold">
+                  Hire Me
                </a>
             </h1>
             <p class="w-full">

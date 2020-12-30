@@ -1,7 +1,7 @@
 <template>
    <div class="min-h-screen login-background bg-gray-100 py-6 flex justify-center items-center">
     <div class="max-w-7xl flex justify-center w-full lg:mx-auto mx-2 lg:p-3">
-      <div class="lg:w-3/4 w-full lg:px-0 min-w-min flex flex-col lg:flex-row rounded-sm  ring ring-gray-300 ring-opacity-20 h-full lg:h-100 the-header shadow">
+      <div class="lg:w-3/4 w-full lg:px-0 min-w-min flex flex-col lg:flex-row rounded-sm  ring ring-gray-300 ring-opacity-20 h-full lg:h-100 bg-gray-50 shadow">
         <div class="w-full lg:w-1/2 relative lg:p-8">
           <div class="p-5 h-full flex flex-col items-start lg:justify-between">
             <div>
