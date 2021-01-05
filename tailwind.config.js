@@ -1,3 +1,4 @@
+const colors = require('tailwindcss/colors')
 module.exports = {
   purge: ['./src/**/*.{vue,js,ts,jsx,tsx}'],
    darkMode: false, // or 'media' or 'class'
@@ -6,8 +7,10 @@ module.exports = {
        colors:{
         'green-primary': '#3b8070',
         'green-secondary': '#00c58e',
+        'green-darkest': '#003C3C',
         'green-light': '#00E0A1',
         'gray-primary': '#edf2f7',
+         cyan: colors.cyan
        },
        fontFamily:{
         exo: [ 'Quicksand', 'system-ui', 'sans-serif']
