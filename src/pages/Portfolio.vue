@@ -42,8 +42,8 @@
          </div>
      </div>
      <div class="max-w-7xl mx-auto px-4 pb-4 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-         <a v-for="portfolio in portfolios" :key="portfolio.id" :href="portfolio.href" target="_blank" rel="noopener noreferrer">
-            <div  class="w-full h-72 flex flex-col overflow-hidden transform transition-all hover:shadow-lg cursor-pointer hover:-translate-y-2 shadow rounded-md bg-gray-100">
+    
+            <div  v-for="portfolio in portfolios" :key="portfolio.id"  class="w-full h-72 flex flex-col overflow-hidden transform transition-all hover:shadow-lg cursor-pointer hover:-translate-y-2 shadow rounded-md bg-gray-100">
                <div class="flex-1 p-4">
                   <h1 class="title font-semibold text-gray-800 text-xl mb-4"> {{ portfolio.title }} </h1>
                   <p>
@@ -51,20 +51,29 @@
                   </p>
                </div>
                <div class="flex-none flex items-center flex-shrink-0 w-full border-t border-gray-300">
-                  <button  class="bg-green-secondary text-gray-200 hover:bg-green-light inline-flex space-x-2 items-center w-full py-3 px-4 h-16">
-                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-icon="meteor" data-prefix="fad" focusable="false" role="img" viewBox="0 0 512 512" class="svg-inline--fa fa-meteor fa-w-16 h-7 -mb-1 mr-1 text-current"><g class="fa-group"><path fill="currentColor" d="M491.14.7C452.44 12.3 379.34 35 303.44 62c-2.1-7-4-13.5-5.6-18.6a16.06 16.06 0 0 0-20-10.69 16.6 16.6 0 0 0-2.86 1.19C232.54 56 122.14 116.5 60.54 176.4c-1.1 1-2.5 2-3.5 3C-19 255.5-19 378.87 57.09 455s199.48 76 275.55-.1c1-1 2-2.4 3-3.5C395.44 389.8 456 279.3 478.14 237a16.05 16.05 0 0 0-6.64-21.72 15.52 15.52 0 0 0-2.86-1.18c-5.2-1.6-11.6-3.5-18.6-5.6 27-76 49.7-149 61.3-187.7A16.17 16.17 0 0 0 491.14.7zM191.94 448a128 128 0 1 1 128-128 128 128 0 0 1-128 128z" opacity=".4" class="fa-secondary"></path><path fill="currentColor" d="M191.94 192a128 128 0 1 0 128 128 128 128 0 0 0-128-128zm-32 128a32 32 0 1 1 32-32 32 32 0 0 1-32 32zm48 64a16 16 0 1 1 16-16 16 16 0 0 1-16 16z" class="fa-primary"></path></g></svg>
-                     <span>Go to Web</span>
-                  </button>
 
-                  <a :href="portfolio.github" target="_blank" rel="noopener noreferrer">
-                     <button class="bg-gray-200 inline-flex space-x-2 items-center hover:bg-gray-300 w-full py-3 px-4 h-16">
+                  <router-link v-if="portfolio.path" :to="portfolio.path" class="w-full">
+                     <button  class="bg-green-secondary focus:outline-none text-gray-200 hover:bg-green-light inline-flex space-x-2 items-center w-full py-3 px-4 h-16">
+                     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-icon="meteor" data-prefix="fad" focusable="false" role="img" viewBox="0 0 512 512" class="svg-inline--fa fa-meteor fa-w-16 h-7 -mb-1 mr-1 text-current"><g class="fa-group"><path fill="currentColor" d="M491.14.7C452.44 12.3 379.34 35 303.44 62c-2.1-7-4-13.5-5.6-18.6a16.06 16.06 0 0 0-20-10.69 16.6 16.6 0 0 0-2.86 1.19C232.54 56 122.14 116.5 60.54 176.4c-1.1 1-2.5 2-3.5 3C-19 255.5-19 378.87 57.09 455s199.48 76 275.55-.1c1-1 2-2.4 3-3.5C395.44 389.8 456 279.3 478.14 237a16.05 16.05 0 0 0-6.64-21.72 15.52 15.52 0 0 0-2.86-1.18c-5.2-1.6-11.6-3.5-18.6-5.6 27-76 49.7-149 61.3-187.7A16.17 16.17 0 0 0 491.14.7zM191.94 448a128 128 0 1 1 128-128 128 128 0 0 1-128 128z" opacity=".4" class="fa-secondary"></path><path fill="currentColor" d="M191.94 192a128 128 0 1 0 128 128 128 128 0 0 0-128-128zm-32 128a32 32 0 1 1 32-32 32 32 0 0 1-32 32zm48 64a16 16 0 1 1 16-16 16 16 0 0 1-16 16z" class="fa-primary"></path></g></svg>
+                        <span>Go to Web</span>
+                     </button>
+                  </router-link>
+
+                  <a v-else :href="portfolio.href" target="_blank" class="w-full" rel="noopener noreferrer">
+                     <button  class="bg-green-secondary focus:outline-none text-gray-200 hover:bg-green-light inline-flex space-x-2 items-center w-full py-3 px-4 h-16">
+                     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-icon="meteor" data-prefix="fad" focusable="false" role="img" viewBox="0 0 512 512" class="svg-inline--fa fa-meteor fa-w-16 h-7 -mb-1 mr-1 text-current"><g class="fa-group"><path fill="currentColor" d="M491.14.7C452.44 12.3 379.34 35 303.44 62c-2.1-7-4-13.5-5.6-18.6a16.06 16.06 0 0 0-20-10.69 16.6 16.6 0 0 0-2.86 1.19C232.54 56 122.14 116.5 60.54 176.4c-1.1 1-2.5 2-3.5 3C-19 255.5-19 378.87 57.09 455s199.48 76 275.55-.1c1-1 2-2.4 3-3.5C395.44 389.8 456 279.3 478.14 237a16.05 16.05 0 0 0-6.64-21.72 15.52 15.52 0 0 0-2.86-1.18c-5.2-1.6-11.6-3.5-18.6-5.6 27-76 49.7-149 61.3-187.7A16.17 16.17 0 0 0 491.14.7zM191.94 448a128 128 0 1 1 128-128 128 128 0 0 1-128 128z" opacity=".4" class="fa-secondary"></path><path fill="currentColor" d="M191.94 192a128 128 0 1 0 128 128 128 128 0 0 0-128-128zm-32 128a32 32 0 1 1 32-32 32 32 0 0 1-32 32zm48 64a16 16 0 1 1 16-16 16 16 0 0 1-16 16z" class="fa-primary"></path></g></svg>
+                        <span>Go to Web</span>
+                     </button>
+                  </a>
+
+                  <a :href="portfolio.github" target="_blank" class="w-full" rel="noopener noreferrer">
+                     <button class="bg-gray-200 focus:outline-none inline-flex space-x-2 items-center hover:bg-gray-300 w-full py-3 px-4 h-16">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512" class="nui-svg nui-svg-gh inline-block h-6 -mt-1 mr-1" data-v-deda5324=""><path fill="currentColor" d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"></path></svg>
                         <span>Github</span>
                      </button>
                   </a>
                </div>
             </div>
-         </a>
      </div>
   </section>
 </template>
@@ -77,6 +86,7 @@ import { reactive, toRefs } from 'vue'
             portfolios: [
                {
                   id:'ab09e92b-3f35-43f3-b5fb-81796c4f3784',
+                  path:'',
                   title: 'ExoApp',
                   href: 'https://exoapps.netlify.app/',
                   github: 'https://github.com/ekosutrisno',
@@ -85,6 +95,7 @@ import { reactive, toRefs } from 'vue'
                },
                {
                   id:'30d02cc3-8616-42ef-8901-9204ff9126f6',
+                  path:'',
                   title: 'ExoMTodo',
                   href: 'https://ekosutrisno.netlify.app/',
                   github: 'https://github.com/ekosutrisno',
@@ -92,6 +103,7 @@ import { reactive, toRefs } from 'vue'
                },
                {
                   id:'88613ea7-507d-47cf-af5e-735a0431441a',
+                  path:'/dashboard',
                   title: 'Todo List UI',
                   href: '/dashboard',
                   github: 'https://github.com/ekosutrisno',
