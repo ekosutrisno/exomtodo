@@ -109,6 +109,14 @@ import { reactive, toRefs } from 'vue'
                   github: 'https://github.com/ekosutrisno',
                   desc: ' Design Todo App UI For Management Your Daily Task'
                },
+               {
+                  id:'88613ea7-507d-47cf-af5e-735a04314446',
+                  path:'',
+                  title: 'Cards Design',
+                  href: 'https://ekosutrisno-cards.netlify.app/',
+                  github: 'https://github.com/ekosutrisno',
+                  desc: ' Design Card UI For portfolio'
+               },
 
             ]
          })
