@@ -27,7 +27,7 @@
   <section class="min-w-min bg-gray-200 pt-14">
      <div class="max-w-7xl mx-auto p-2">
          <div class="w-full px-2 flex items-center justify-center">
-            <input  type="text" placeholder="Search topic (Press “/” to focus)"  class="py-3 px-4 rounded w-full max-w-lg mt-6 focus:outline-none ring-2 ring-green-secondary ring-opacity-20 focus:ring-opacity-60"/>
+            <input v-model="querySearch"  type="text" placeholder="Search topic (Press “/” to focus)"  class="py-3 px-4 rounded w-full max-w-lg mt-6 focus:outline-none ring-2 ring-green-secondary ring-opacity-20 focus:ring-opacity-60"/>
          </div>
          <div class="flex items-center justify-end my-4">
             <div class="inline-flex items-center">
@@ -43,7 +43,7 @@
      </div>
      <div class="max-w-7xl mx-auto px-4 pb-4 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
     
-            <div  v-for="portfolio in portfolios" :key="portfolio.id"  class="w-full h-72 flex flex-col overflow-hidden transform transition-all hover:shadow-lg cursor-pointer hover:-translate-y-2 shadow rounded-md bg-gray-100">
+            <div  v-for="portfolio in onSearchAction" :key="portfolio.id"  class="w-full h-72 flex flex-col overflow-hidden transform transition-all hover:shadow-lg cursor-pointer hover:-translate-y-2 shadow rounded-md bg-gray-100">
                <div class="flex-1 p-4">
                   <h1 class="title font-semibold text-gray-800 text-xl mb-4"> {{ portfolio.title }} </h1>
                   <p>
@@ -79,19 +79,28 @@
 </template>
 
 <script>
-import { reactive, toRefs } from 'vue'
+import { computed, reactive, toRefs } from 'vue'
    export default {
       setup () {
          const state = reactive({
+            querySearch: '',
             portfolios: [
                {
                   id:'ab09e92b-3f35-43f3-b5fb-81796c4f3784',
                   path:'',
                   title: 'ExoApp',
                   href: 'https://exoapps.netlify.app/',
-                  github: 'https://github.com/ekosutrisno',
-                  desc: ' Merupakan chat app menggunakan Firebase, VueJs dan TailwindCss'
+                  github: 'https://github.com/ekosutrisno/exoapp-chat',
+                  desc: ' Merupakan chat app menggunakan Firebase, VueJs dan TailwindCss. User dapat chat secara pribadi maupun group, user juga bisa melakukan update profile, bahkan delete account jika di kira sudah tidak di gunakan user lagi.'
 
+               },
+               {
+                  id:'46a2e388-85d5-402c-ae23-4a7aca1d2b8b',
+                  path:'',
+                  title: 'E-Quran Bahasa Indonesia',
+                  href: 'https://exoapp-quran.netlify.app/',
+                  github: 'https://github.com/ekosutrisno',
+                  desc: 'Al-Quran Digital Terjemahan Bahasa Indonesia mempunyai fitur lengkap sperti mencari berdasarkan surat, ayat, manzil, rukuk, halaman, juz, tandai bacaan, dan menyimpan ayat-ayat penting ke koleksi favorit.'
                },
                {
                   id:'30d02cc3-8616-42ef-8901-9204ff9126f6',
@@ -119,10 +128,15 @@ import { reactive, toRefs } from 'vue'
                },
 
             ]
+         });
+
+         const onSearchAction = computed(()=>{ return state.portfolios
+            .filter(po=> po.title.toLowerCase().includes(state.querySearch.toLowerCase()));
          })
 
          return {
-            ...toRefs(state)
+            ...toRefs(state),
+            onSearchAction
          }
       }
    }
