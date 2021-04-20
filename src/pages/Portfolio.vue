@@ -99,7 +99,7 @@ import { computed, reactive, toRefs } from 'vue'
                   path:'',
                   title: 'E-Quran Bahasa Indonesia',
                   href: 'https://exoapp-quran.netlify.app/',
-                  github: 'https://github.com/ekosutrisno',
+                  github: 'https://github.com/ekosutrisno/exoapp-quran',
                   desc: 'Al-Quran Digital Terjemahan Bahasa Indonesia mempunyai fitur lengkap sperti mencari berdasarkan surat, ayat, manzil, rukuk, halaman, juz, tandai bacaan, dan menyimpan ayat-ayat penting ke koleksi favorit.'
                },
                {
@@ -123,8 +123,16 @@ import { computed, reactive, toRefs } from 'vue'
                   path:'',
                   title: 'Cards Design',
                   href: 'https://ekosutrisno-cards.netlify.app/',
-                  github: 'https://github.com/ekosutrisno',
+                  github: 'https://github.com/ekosutrisno/vue-card-portfolio',
                   desc: ' Design Card UI For portfolio'
+               },
+               {
+                  id:'95a1229c-b6b7-4539-a079-6f6eb5bd26c4',
+                  path:'',
+                  title: 'Whatsapp Web Clone',
+                  href: 'https://whatsapps.netlify.app',
+                  github: 'https://github.com/ekosutrisno/vue-portfolio',
+                  desc: ' Clone WhatsApp Web UI using Vue and Tailwindcss'
                },
 
             ]
