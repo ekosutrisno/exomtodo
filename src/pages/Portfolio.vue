@@ -134,6 +134,14 @@ import { computed, reactive, toRefs } from 'vue'
                   github: 'https://github.com/ekosutrisno/vue-portfolio',
                   desc: ' Clone WhatsApp Web UI using Vue and Tailwindcss'
                },
+               {
+                  id:'39406a6d-68eb-4130-b303-47e5287acb67',
+                  path:'',
+                  title: 'Hotel Frontend UI (WEB)',
+                  href: 'https://dev-hotels.netlify.app/',
+                  github: 'https://github.com/ekosutrisno',
+                  desc: ' Create Hotel Rent UI inspired from Drible Design. This for dekstop version (Large View)'
+               },
 
             ]
          });
