@@ -107,7 +107,7 @@ import { computed, reactive, toRefs } from 'vue'
                   path:'',
                   title: 'ExoMTodo',
                   href: 'https://ekosutrisno.netlify.app/',
-                  github: 'https://github.com/ekosutrisno',
+                  github: 'https://github.com/ekosutrisno/exomtodo',
                   desc: ' Website Using VueJs dan TailwindCss'
                },
                {
@@ -115,7 +115,7 @@ import { computed, reactive, toRefs } from 'vue'
                   path:'/dashboard',
                   title: 'Todo List UI',
                   href: '/dashboard',
-                  github: 'https://github.com/ekosutrisno',
+                  github: 'https://github.com/ekosutrisno/exomtodo',
                   desc: ' Design Todo App UI For Management Your Daily Task'
                },
                {
@@ -139,9 +139,34 @@ import { computed, reactive, toRefs } from 'vue'
                   path:'',
                   title: 'Hotel Frontend UI (WEB)',
                   href: 'https://dev-hotels.netlify.app/',
-                  github: 'https://github.com/ekosutrisno',
+                  github: 'https://github.com/ekosutrisno/research-vue3',
                   desc: ' Create Hotel Rent UI inspired from Drible Design. This for dekstop version (Large View)'
                },
+               {
+                  id:'4631de3a-c350-4851-9849-a336faf7df36',
+                  path:'',
+                  title: 'Travel App Frontend UI (WEB)',
+                  href: 'https://exoapp-travel.vercel.app',
+                  github: 'https://github.com/ekosutrisno/travel-app',
+                  desc: ' Create Travel App UI inspired from Drible Design. This for dekstop version (Large View) and Mobile View'
+               },
+               {
+                  id:'b38365eb-dc45-4829-863a-faa3ccf1b109',
+                  path:'',
+                  title: 'Minio Bucket Frontend UI (WEB)',
+                  href: 'https://dev-minion.netlify.app/',
+                  github: 'https://github.com/ekosutrisno/minio-app',
+                  desc: ' Create File Management Fully Functions UI inspired from Drible Design. This for dekstop version (Large View) and Mobile View'
+               },
+               {
+                  id:'a8974b82-33ea-4ea4-bbe8-2114f5ed9600',
+                  path:'',
+                  title: 'Clone Atrium With new UI (WEB)',
+                  href: 'https://atrium-xsis.vercel.app/',
+                  github: 'https://github.com/ekosutrisno/atrium-xsis',
+                  desc: ' Create and Clone Atrium UI inspired from Drible Design. This for dekstop version (Large View) and Mobile View'
+               },
+
 
             ]
          });
