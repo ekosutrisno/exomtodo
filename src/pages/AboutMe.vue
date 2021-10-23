@@ -21,14 +21,10 @@
                </a>
             </h1>
             <p class="w-full">
-               Awalnya saya suka Desain Grafis seperti desain poster, banner, standing banner, dan cover buku. Tetapi pada akhir tahun 2019 saya mulai tertarik
-               dengan dunia IT dan dari sanalah saya mulai belajar pemprograman. Pada awalnya saya belajar hanya <code class="bg-green-100 font-medium px-2 rounded text-gray-900">CSS & HTML</code> saja, ya cuma coba-coba desain landing page biasa tapi setelah dirasa mulai ada perkembangan saya putuskan belajar <code class="bg-green-100 font-medium px-2 rounded text-gray-900">PHP</code> dan <code class="bg-green-100 font-medium px-2 rounded text-gray-900">Javascript</code>
-               agar website yang saya buat fungsionalitasnya berjalan.
+               Initially I liked Graphic Design such as poster, banner, standing banner, and book cover designs. But at the end of 2019 I became interested in the IT world and that's where I started to learn programming. At first I only learned <code class="code-style">CSS & HTML</code>, so I just tried the usual landing page design but after I felt there was progress, I decided to learn <code class="code-style">PHP</code> and <code class="code-style">Javascript</code> so that the website that I created was functional.
                <br>
                <br>
-               Setelah berjalan beberapa bulan saya coba ikut interview dan kebetulan lolos dan menjalani training selama 7 minggu. Bahasa pemprograman yang Saya
-               ikuti bukan <code class="bg-green-100 font-medium px-2 rounded text-gray-900">PHP</code> akan tetapi <code class="bg-green-100 font-medium px-2 rounded text-gray-900">Java</code>, yang pada akhirnya saya berkerja sebagai Java Backend Developer. Selain backend saya juga
-               mengerjakan Frontend menggunakan <code class="bg-green-100 font-medium px-2 rounded text-gray-900">VueJs</code>.
+               After a few months, I tried to join the interview and happened to pass and underwent training for 7 weeks. The programming language that I follow is not <code class="code-style">PHP</code> but <code class="code-style">Java</code>, which in the end I worked as a Java Backend Developer. Besides backend I also work on Frontend using <code class="code-style">VueJs</code>.
             </p>
          <div class="mt-4">
             <h1 class="text-xl inline-flex">
@@ -40,7 +36,7 @@
                <LabelButton :href="`https://twitter.com/eko_sutrisno96`">#Twitter @eko_sutrisno96</LabelButton>
                <LabelButton :href="`https://www.instagram.com/eko_sutrisno96/`">#Instagram @eko_sutrisno96</LabelButton>
                <LabelButton :href="`https://www.facebook.com/profile.php?id=100010077287097`">#Facebook Eko Sutrisno</LabelButton>
-               <LabelButton :href="`https://www.linkedin.com/in/eko-sutrisno-90baa0152`">#LinkedIn Eko Sutrisno</LabelButton>
+               <LabelButton :href="`https://www.linkedin.com/in/eko-sutrisno-96s`">#LinkedIn Eko Sutrisno</LabelButton>
             </div>
          </div>
 
@@ -97,6 +93,11 @@
                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                   </svg> <span>Javascript</span>
                </a>
+               <a href="#" class="font-semibold hover:bg-gray-100 transition inline-flex space-x-1 text-sm px-3 bg-gray-200 rounded-full border border-gray-300">
+                 <svg class="w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                  </svg> <span>Typescript</span>
+               </a>
             </div>
          </div>
          <div class="mt-4">
@@ -112,6 +113,11 @@
                  <svg class="w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
                   </svg><span>VueJs</span>
+               </a>
+              <a href="#" class="font-semibold hover:bg-gray-100 transition inline-flex space-x-1 text-sm px-3 bg-gray-200 rounded-full border border-gray-300">
+                 <svg class="w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                  </svg><span>TailwindCSS</span>
                </a>
             </div>
          </div>
@@ -137,6 +143,12 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
                   </svg>
                   <span>MongoDB</span>
+               </a>
+                <a href="#" class="font-semibold m-1 md:ml-0 hover:bg-gray-100 transition inline-flex space-x-1 text-sm px-3 bg-gray-200 rounded-full border border-gray-300">
+                  <svg class="w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+                  </svg>
+                  <span>Firebase</span>
                </a>
             </div>
          </div>

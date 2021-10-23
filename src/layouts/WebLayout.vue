@@ -3,7 +3,12 @@
     <div class="w-full">
       <NavbarHeader/>
         <router-view></router-view>
-      <Footer/>
+        
+    <section class="flex px-2 pb-24 lg:pb-8 pt-8 items-center justify-center h-10 border-t-2 border-gray-200">
+      <p class="text-sm flex flex-col items-center md:flex-row">
+        <span class="mr-2">&copy; {{(new Date()).getFullYear()}} Eko Sutrisno </span>
+      </p>
+    </section>
       <NavbarFooter/>
     </div>
   </div>

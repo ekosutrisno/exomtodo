@@ -18,13 +18,17 @@
     .the-header {
       -webkit-backdrop-filter: blur(12px);
       backdrop-filter: blur(12px);
-      background-color: hsla(0, 0%, 100%, 0.75);
+      background-color: hsla(0, 0%, 100%, 0.55);
     }
 
     .the-form {
       -webkit-backdrop-filter: blur(12px);
       backdrop-filter: blur(12px);
       background-color: hsla(0, 0%, 100%, 0.3);
+    }
+
+    .code-style{
+      @apply bg-green-100 font-medium px-2 rounded text-gray-900
     }
   }
 }
